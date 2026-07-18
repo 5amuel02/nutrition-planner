@@ -268,6 +268,26 @@ body {
     animation: fadeInDown 0.8s ease-out;
 }
 
+.header-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.lang-btn {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: var(--accent);
+    backdrop-filter: blur(10px);
+}
+
+.lang-btn:hover {
+    background: rgba(16, 185, 129, 0.2);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }

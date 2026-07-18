@@ -25,38 +25,38 @@
             </div>
             
             <div class="sidebar-section">
-                <h3>Target & Tujuan Harian</h3>
+                <h3 data-i18n="targetGoalTitle">Target & Tujuan Harian</h3>
                 <div class="goal-selector">
                     <button class="goal-btn active" data-goal="balance" id="goal-balance-btn">
-                        <i class="fa-solid fa-scale-balanced"></i> Diet Seimbang
+                        <i class="fa-solid fa-scale-balanced"></i> <span data-i18n="goalBalance">Diet Seimbang</span>
                     </button>
                     <button class="goal-btn" data-goal="loss" id="goal-loss-btn">
-                        <i class="fa-solid fa-fire"></i> Turun Berat Badan
+                        <i class="fa-solid fa-fire"></i> <span data-i18n="goalLoss">Turun Berat Badan</span>
                     </button>
                     <button class="goal-btn" data-goal="gain" id="goal-gain-btn">
-                        <i class="fa-solid fa-dumbbell"></i> Tambah Otot
+                        <i class="fa-solid fa-dumbbell"></i> <span data-i18n="goalGain">Tambah Otot</span>
                     </button>
                 </div>
             </div>
 
             <div class="sidebar-section">
-                <h3>Detail Target Nutrisi</h3>
+                <h3 data-i18n="detailTargetTitle">Detail Target Nutrisi</h3>
                 <div class="target-inputs">
                     <div class="input-group">
-                        <label for="calories-target">Kalori (kcal)</label>
+                        <label for="calories-target" data-i18n="labelCalories">Kalori (kcal)</label>
                         <input type="number" id="calories-target" value="2000" min="1000" max="5000">
                     </div>
                     <div class="macro-targets">
                         <div class="input-group mini">
-                            <label for="protein-target">Protein (g)</label>
+                            <label for="protein-target" data-i18n="labelProtein">Protein (g)</label>
                             <input type="number" id="protein-target" value="120" min="30" max="300">
                         </div>
                         <div class="input-group mini">
-                            <label for="carbs-target">Karbo (g)</label>
+                            <label for="carbs-target" data-i18n="labelCarbs">Karbo (g)</label>
                             <input type="number" id="carbs-target" value="230" min="50" max="600">
                         </div>
                         <div class="input-group mini">
-                            <label for="fat-target">Lemak (g)</label>
+                            <label for="fat-target" data-i18n="labelFat">Lemak (g)</label>
                             <input type="number" id="fat-target" value="65" min="20" max="200">
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                     <i class="fa-solid fa-circle-info"></i>
                 </div>
                 <div class="info-text">
-                    <p>Geser (drag) bahan makanan dari laci ke waktu makan di sebelah kanan untuk menyusun menu harian Anda.</p>
+                    <p data-i18n="infoDragText">Geser (drag) bahan makanan dari laci ke waktu makan di sebelah kanan untuk menyusun menu harian Anda.</p>
                 </div>
             </div>
         </aside>
@@ -78,15 +78,18 @@
             <!-- Header -->
             <header class="app-header">
                 <div class="welcome-text">
-                    <h1>Perencana Nutrisi Pintar</h1>
+                    <h1 id="greeting-title">Selamat Pagi, Chef!</h1>
                     <p id="current-date">Sabtu, 18 Juli 2026</p>
                 </div>
                 <div class="header-actions">
+                    <button id="lang-toggle-btn" class="btn lang-btn" title="Ganti Bahasa / Change Language">
+                        <i class="fa-solid fa-language"></i> <span id="lang-label">EN</span>
+                    </button>
                     <button id="magic-plan-btn" class="btn btn-primary magic-btn">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i> Susun Menu Otomatis
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> <span data-i18n="btnAutoPlan">Susun Menu Otomatis</span>
                     </button>
                     <button id="reset-plan-btn" class="btn btn-secondary">
-                        <i class="fa-solid fa-rotate-left"></i> Atur Ulang Rencana
+                        <i class="fa-solid fa-rotate-left"></i> <span data-i18n="btnReset">Atur Ulang Rencana</span>
                     </button>
                 </div>
             </header>
@@ -95,7 +98,7 @@
             <section class="dashboard-grid">
                 <!-- Circular Chart Panel -->
                 <div class="dashboard-card chart-card">
-                    <h3>Pencapaian Kalori</h3>
+                    <h3 data-i18n="caloriesAchieved">Pencapaian Kalori</h3>
                     <div class="circular-chart-container">
                         <svg viewBox="0 0 36 36" class="circular-chart">
                             <path class="circle-bg"
@@ -120,12 +123,12 @@
 
                 <!-- Macro Progress Panel -->
                 <div class="dashboard-card macros-card">
-                    <h3>Komposisi Makronutrisi</h3>
+                    <h3 data-i18n="macroComposition">Komposisi Makronutrisi</h3>
                     <div class="macro-list">
                         <!-- Protein -->
                         <div class="macro-progress-item">
                             <div class="macro-info">
-                                <span class="macro-name"><span class="dot dot-protein"></span>Protein</span>
+                                <span class="macro-name"><span class="dot dot-protein"></span><span data-i18n="macroProtein">Protein</span></span>
                                 <span class="macro-values"><b id="current-protein">0</b>g / <span id="target-protein-display">120</span>g</span>
                             </div>
                             <div class="progress-bar-container">
@@ -135,7 +138,7 @@
                         <!-- Carbs -->
                         <div class="macro-progress-item">
                             <div class="macro-info">
-                                <span class="macro-name"><span class="dot dot-carbs"></span>Karbohidrat</span>
+                                <span class="macro-name"><span class="dot dot-carbs"></span><span data-i18n="macroCarbs">Karbohidrat</span></span>
                                 <span class="macro-values"><b id="current-carbs">0</b>g / <span id="target-carbs-display">230</span>g</span>
                             </div>
                             <div class="progress-bar-container">
@@ -145,7 +148,7 @@
                         <!-- Fats -->
                         <div class="macro-progress-item">
                             <div class="macro-info">
-                                <span class="macro-name"><span class="dot dot-fat"></span>Lemak</span>
+                                <span class="macro-name"><span class="dot dot-fat"></span><span data-i18n="macroFat">Lemak</span></span>
                                 <span class="macro-values"><b id="current-fat">0</b>g / <span id="target-fat-display">65</span>g</span>
                             </div>
                             <div class="progress-bar-container">
@@ -157,12 +160,12 @@
 
                 <!-- Water Tracker Panel -->
                 <div class="dashboard-card water-card">
-                    <h3><i class="fa-solid fa-droplet" style="color: #3b82f6;"></i> Target Minum Harian</h3>
+                    <h3><i class="fa-solid fa-droplet" style="color: #3b82f6;"></i> <span data-i18n="waterTrackerTitle">Target Minum Harian</span></h3>
                     <div class="water-tracker-container" id="water-tracker">
                         <!-- Glasses generated by JS -->
                     </div>
                     <div class="water-status">
-                        <span id="water-count">0</span> / 8 Gelas
+                        <span id="water-count">0</span> / 8 <span data-i18n="waterGlasses">Gelas</span>
                     </div>
                 </div>
             </section>
@@ -170,15 +173,15 @@
             <!-- Ingredients Drawer Section -->
             <section class="ingredients-section">
                 <div class="section-header">
-                    <h2><i class="fa-solid fa-carrot"></i> Laci Bahan Makanan</h2>
+                    <h2><i class="fa-solid fa-carrot"></i> <span data-i18n="drawerTitle">Laci Bahan Makanan</span></h2>
                     <div class="search-filter-box">
-                        <input type="text" id="search-ingredient" placeholder="Cari bahan...">
+                        <input type="text" id="search-ingredient" data-i18n-placeholder="searchPlaceholder" placeholder="Cari bahan...">
                         <select id="filter-category">
-                            <option value="all">Semua Kategori</option>
-                            <option value="protein">Sumber Protein</option>
-                            <option value="carb">Sumber Karbohidrat</option>
-                            <option value="fat">Sumber Lemak</option>
-                            <option value="veg">Sayur & Buah</option>
+                            <option value="all" data-i18n="catAll">Semua Kategori</option>
+                            <option value="protein" data-i18n="catProtein">Sumber Protein</option>
+                            <option value="carb" data-i18n="catCarb">Sumber Karbohidrat</option>
+                            <option value="fat" data-i18n="catFat">Sumber Lemak</option>
+                            <option value="veg" data-i18n="catVeg">Sayur & Buah</option>
                         </select>
                     </div>
                 </div>
@@ -189,18 +192,18 @@
 
             <!-- Meals Slots Section (Breakfast, Lunch, Dinner, Snack) -->
             <section class="meals-section">
-                <h2><i class="fa-solid fa-utensils"></i> Susunan Menu Makan</h2>
+                <h2><i class="fa-solid fa-utensils"></i> <span data-i18n="mealSlotsTitle">Susunan Menu Makan</span></h2>
                 <div class="meals-grid">
                     <!-- Breakfast -->
                     <div class="meal-card" data-meal-type="breakfast">
                         <div class="meal-header">
-                            <h3><i class="fa-solid fa-mug-saucer"></i> Sarapan Pagi</h3>
+                            <h3><i class="fa-solid fa-mug-saucer"></i> <span data-i18n="mealBreakfast">Sarapan Pagi</span></h3>
                             <span class="meal-calories-summary" id="breakfast-calories">0 kcal</span>
                         </div>
                         <div class="meal-dropzone" id="breakfast-dropzone" data-meal="breakfast">
                             <div class="drop-placeholder">
                                 <i class="fa-solid fa-plus"></i>
-                                <p>Geser bahan makanan di sini</p>
+                                <p data-i18n="dropHere">Geser bahan makanan di sini</p>
                             </div>
                         </div>
                     </div>
@@ -208,13 +211,13 @@
                     <!-- Lunch -->
                     <div class="meal-card" data-meal-type="lunch">
                         <div class="meal-header">
-                            <h3><i class="fa-solid fa-bowl-rice"></i> Makan Siang</h3>
+                            <h3><i class="fa-solid fa-bowl-rice"></i> <span data-i18n="mealLunch">Makan Siang</span></h3>
                             <span class="meal-calories-summary" id="lunch-calories">0 kcal</span>
                         </div>
                         <div class="meal-dropzone" id="lunch-dropzone" data-meal="lunch">
                             <div class="drop-placeholder">
                                 <i class="fa-solid fa-plus"></i>
-                                <p>Geser bahan makanan di sini</p>
+                                <p data-i18n="dropHere">Geser bahan makanan di sini</p>
                             </div>
                         </div>
                     </div>
@@ -222,13 +225,13 @@
                     <!-- Dinner -->
                     <div class="meal-card" data-meal-type="dinner">
                         <div class="meal-header">
-                            <h3><i class="fa-solid fa-plate-wheat"></i> Makan Malam</h3>
+                            <h3><i class="fa-solid fa-plate-wheat"></i> <span data-i18n="mealDinner">Makan Malam</span></h3>
                             <span class="meal-calories-summary" id="dinner-calories">0 kcal</span>
                         </div>
                         <div class="meal-dropzone" id="dinner-dropzone" data-meal="dinner">
                             <div class="drop-placeholder">
                                 <i class="fa-solid fa-plus"></i>
-                                <p>Geser bahan makanan di sini</p>
+                                <p data-i18n="dropHere">Geser bahan makanan di sini</p>
                             </div>
                         </div>
                     </div>
@@ -236,13 +239,13 @@
                     <!-- Snacks -->
                     <div class="meal-card" data-meal-type="snack">
                         <div class="meal-header">
-                            <h3><i class="fa-solid fa-cookie"></i> Cemilan / Lainnya</h3>
+                            <h3><i class="fa-solid fa-cookie"></i> <span data-i18n="mealSnack">Cemilan / Lainnya</span></h3>
                             <span class="meal-calories-summary" id="snack-calories">0 kcal</span>
                         </div>
                         <div class="meal-dropzone" id="snack-dropzone" data-meal="snack">
                             <div class="drop-placeholder">
                                 <i class="fa-solid fa-plus"></i>
-                                <p>Geser bahan makanan di sini</p>
+                                <p data-i18n="dropHere">Geser bahan makanan di sini</p>
                             </div>
                         </div>
                     </div>
@@ -251,11 +254,11 @@
 
             <!-- Recipes Recommendations Section -->
             <section class="recipes-section">
-                <h2><i class="fa-solid fa-wand-magic-sparkles"></i> Rekomendasi Menu Masakan</h2>
+                <h2><i class="fa-solid fa-wand-magic-sparkles"></i> <span data-i18n="recipesTitle">Rekomendasi Menu Masakan</span></h2>
                 <div class="recipes-grid" id="recipes-grid">
                     <!-- Recommended recipes will be displayed here dynamically -->
                     <div class="no-recipes">
-                        <p>Tambahkan bahan makanan ke menu makan Anda untuk melihat rekomendasi resep masakan sehat.</p>
+                        <p data-i18n="noRecipes">Tambahkan bahan makanan ke menu makan Anda untuk melihat rekomendasi resep masakan sehat.</p>
                     </div>
                 </div>
             </section>
@@ -268,23 +271,23 @@
     <!-- Meal Selection Modal -->
     <div class="custom-modal" id="meal-selector-modal">
         <div class="modal-header">
-            <h3 id="meal-modal-title">Tambahkan ke Menu</h3>
+            <h3 id="meal-modal-title" data-i18n="modalAddMenu">Tambahkan ke Menu</h3>
             <button class="close-modal-btn" id="close-meal-modal"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <div class="modal-body">
-            <p id="meal-modal-desc">Pilih jadwal makan untuk bahan ini.</p>
+            <p id="meal-modal-desc" data-i18n="modalSelectTime">Pilih jadwal makan untuk bahan ini.</p>
             <div class="meal-options-grid">
                 <button class="meal-option-btn" data-meal="breakfast">
-                    <i class="fa-solid fa-mug-saucer"></i> Sarapan Pagi
+                    <i class="fa-solid fa-mug-saucer"></i> <span data-i18n="mealBreakfast">Sarapan Pagi</span>
                 </button>
                 <button class="meal-option-btn" data-meal="lunch">
-                    <i class="fa-solid fa-bowl-rice"></i> Makan Siang
+                    <i class="fa-solid fa-bowl-rice"></i> <span data-i18n="mealLunch">Makan Siang</span>
                 </button>
                 <button class="meal-option-btn" data-meal="dinner">
-                    <i class="fa-solid fa-plate-wheat"></i> Makan Malam
+                    <i class="fa-solid fa-plate-wheat"></i> <span data-i18n="mealDinner">Makan Malam</span>
                 </button>
                 <button class="meal-option-btn" data-meal="snack">
-                    <i class="fa-solid fa-cookie"></i> Cemilan
+                    <i class="fa-solid fa-cookie"></i> <span data-i18n="mealSnack">Cemilan</span>
                 </button>
             </div>
         </div>
@@ -293,14 +296,14 @@
     <!-- Confirm Modal -->
     <div class="custom-modal" id="confirm-modal">
         <div class="modal-header">
-            <h3>Konfirmasi</h3>
+            <h3 data-i18n="confirmTitle">Konfirmasi</h3>
             <button class="close-modal-btn" id="close-confirm-modal"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <div class="modal-body">
-            <p id="confirm-modal-msg">Hapus semua rencana makanan?</p>
+            <p id="confirm-modal-msg" data-i18n="confirmDesc">Hapus semua rencana makanan?</p>
             <div class="modal-actions">
-                <button class="btn btn-secondary" id="confirm-cancel-btn">Batal</button>
-                <button class="btn btn-danger" id="confirm-ok-btn">Ya, Hapus</button>
+                <button class="btn btn-secondary" id="confirm-cancel-btn" data-i18n="btnCancel">Batal</button>
+                <button class="btn btn-danger" id="confirm-ok-btn" data-i18n="btnYesDelete">Ya, Hapus</button>
             </div>
         </div>
     </div>
