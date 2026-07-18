@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>🥗 Perencana Nutrisi Pintar</h1>
-  <p><i>Aplikasi Web Interaktif untuk Merencanakan Makanan & Gizi Harian Anda</i></p>
+  <h1>🥗 Smart Nutrition Planner</h1>
+  <p><i>An Interactive Web Application for Planning Your Daily Meals & Nutrition</i></p>
   
   [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
   [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
@@ -9,62 +9,67 @@
 
 ---
 
-## 🌟 Tentang Proyek Ini
+## 🚀 Live Demo
 
-**Perencana Nutrisi Pintar** adalah aplikasi web berbasis *frontend* murni (Vanilla JS, HTML, CSS) yang dirancang dengan antarmuka UI/UX modern ala *Glassmorphism*. Aplikasi ini memungkinkan pengguna untuk menyusun menu makanan harian dengan cara *drag-and-drop* (geser-dan-lepas) yang intuitif, serta melacak pencapaian makronutrisi (Protein, Karbohidrat, Lemak) dan kalori secara otomatis.
+**[Click here to view the Live Demo of Smart Nutrition Planner!](https://5amuel02.github.io/nutrition-planner/)**
 
-Proyek ini sangat cocok untuk menunjukkan keahlian *front-end development*, manipulasi DOM tingkat lanjut, logika state management di sisi klien, dan desain web yang responsif.
+## 🌟 About The Project
 
-## ✨ Fitur Unggulan
+**Smart Nutrition Planner** is a pure frontend web application (Vanilla JS, HTML, CSS) designed with a modern *Glassmorphism* UI/UX. This application allows users to plan their daily meals using an intuitive drag-and-drop interface, while automatically tracking macronutrients (Protein, Carbohydrates, Fat) and calories in real-time.
 
-- 🖱️ **Interaksi Drag & Drop:** Pengalaman menyusun menu makanan yang sangat alami. Tarik bahan makanan dari laci ke waktu makan (Sarapan, Makan Siang, dll).
-- 📊 **Perhitungan Gizi Real-time:** Grafik kalori melingkar dan *progress bar* makronutrisi yang langsung terisi saat makanan ditambahkan.
-- 🪄 **Magic Auto-Plan:** Bingung mau makan apa? Satu kali klik tombol akan menyusun menu bergizi secara otomatis sesuai target kalori Anda.
-- 💧 **Water Intake Tracker:** Lacak konsumsi air putih harian Anda dengan antarmuka gelas yang bisa diisi.
-- 🃏 **Smart Recipe Recommendations:** Aplikasi akan menyarankan resep sehat (dilengkapi dengan efek visual 3D) berdasarkan bahan makanan yang ada di piring Anda.
-- 💾 **Local Storage Persistence:** Aplikasi akan otomatis mengingat menu dan target Anda meskipun browser ditutup. Data Anda aman!
-- 📱 **Desain 100% Responsif:** Tampil menawan di layar desktop, tablet, maupun *smartphone* terkecil sekalipun.
+This project is perfect for showcasing front-end development skills, advanced DOM manipulation, client-side state management, and responsive web design.
 
-## 🚀 Cara Menjalankan (Instalasi)
+## ✨ Key Features
 
-Proyek ini tidak memerlukan instalasi server atau dependensi NPM yang rumit. Anda bisa langsung menjalankannya di browser!
+- 🖱️ **Drag & Drop Interaction:** A highly natural meal planning experience. Drag ingredients from the drawer to meal slots (Breakfast, Lunch, etc.).
+- 📊 **Real-time Nutrition Calculation:** Circular calorie charts and macronutrient progress bars that update instantly as food is added.
+- 🪄 **Magic Auto-Plan:** Don't know what to eat? A single click automatically generates a nutritious menu based on your calorie target.
+- 💧 **Water Intake Tracker:** Track your daily water consumption with an interactive glass interface.
+- 🃏 **Smart Recipe Recommendations:** The app suggests healthy recipes (complete with 3D visual effects) based on the ingredients on your plate.
+- 💾 **Local Storage Persistence:** The app automatically remembers your menu and targets even if the browser is closed. Your data is safe!
+- 📱 **100% Responsive Design:** Looks stunning on desktop screens, tablets, and even the smallest smartphones.
 
-1. **Clone repositori ini:**
+## 🚀 Getting Started
+
+This project doesn't require complex server installations or NPM dependencies. You can run it directly in your browser!
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/5amuel02/nutrition-planner.git
    ```
-2. **Buka foldernya:**
-   Arahkan ke folder hasil kloning.
-3. **Jalankan:**
-   Cukup buka file `index.html` menggunakan browser modern pilihan Anda (Chrome, Firefox, Safari, Edge).
-   *Atau, Anda bisa menggunakan ekstensi **Live Server** di VSCode untuk pengalaman terbaik.*
+2. **Open the directory:**
+   Navigate into the cloned folder.
+3. **Run:**
+   Simply open the `index.html` file using your preferred modern browser (Chrome, Firefox, Safari, Edge).
+   *Alternatively, you can use the **Live Server** extension in VSCode for the best experience.*
 
-## 🎨 Cuplikan Antarmuka (Screenshots)
+## 🎨 Screenshots
 
 ![Dashboard Screenshot](./assets/screenshot.png)
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Built With
 
-- **HTML5:** Struktur semantik yang rapi.
-- **CSS3:** Menggunakan CSS Grid & Flexbox, variabel CSS, efek *Glassmorphism* (backdrop-filter), dan CSS Animations. Tanpa framework eksternal seperti Bootstrap/Tailwind.
-- **Vanilla JavaScript (ES6+):** Logika inti aplikasi, drag-and-drop API bawaan browser, dan manajemen *Local Storage*.
-- **FontAwesome:** Menyediakan kumpulan ikon vektor modern (SVG based).
-- **VanillaTilt.js & Canvas-Confetti:** Library pihak ketiga ultra-ringan untuk menambah efek visual "Wow Factor".
+- **HTML5:** Clean semantic structure.
+- **CSS3:** Utilizing CSS Grid & Flexbox, CSS variables, *Glassmorphism* effects (backdrop-filter), and CSS Animations. No external frameworks like Bootstrap or Tailwind.
+- **Vanilla JavaScript (ES6+):** Core application logic, native browser drag-and-drop API, and *Local Storage* management.
+- **FontAwesome:** Provides a collection of modern vector icons (SVG based).
+- **VanillaTilt.js & Canvas-Confetti:** Ultra-lightweight third-party libraries for added "Wow Factor" visual effects.
 
-## 🤝 Kontribusi
+## 🤝 Contributing
 
-Merasa ada yang bisa ditingkatkan? Silakan buat *pull request*! 
-1. Fork proyek ini.
-2. Buat *branch* fitur Anda (`git checkout -b fitur-keren`).
-3. Lakukan *commit* perubahan Anda (`git commit -m 'Menambahkan fitur keren'`).
-4. *Push* ke branch (`git push origin fitur-keren`).
-5. Buka *Pull Request*.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## 📜 Lisensi
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Didistribusikan di bawah Lisensi MIT. Lihat `LICENSE` untuk informasi lebih lanjut.
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 <div align="center">
-  Dibuat dengan ❤️ oleh <a href="https://github.com/5amuel02">5amuel02</a>
+  Built with ❤️ by <a href="https://github.com/5amuel02">5amuel02</a>
 </div>
