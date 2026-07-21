@@ -11,12 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
     <div class="app-container">
+        <!-- Mobile Sidebar Overlay -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
         <!-- Sidebar: Goal Settings -->
         <aside class="sidebar" id="sidebar">
+            <button class="close-sidebar-btn" id="close-sidebar-btn"><i class="fa-solid fa-xmark"></i></button>
+            
             <div class="brand">
                 <div class="brand-icon">
                     <i class="fa-solid fa-apple-whole"></i>
@@ -77,9 +82,14 @@
         <main class="main-content">
             <!-- Header -->
             <header class="app-header">
-                <div class="welcome-text">
-                    <h1 id="greeting-title">Selamat Pagi, Chef!</h1>
-                    <p id="current-date">Sabtu, 18 Juli 2026</p>
+                <div class="header-left">
+                    <button id="mobile-menu-btn" class="btn mobile-menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="welcome-text">
+                        <h1 id="greeting-title">Selamat Pagi, Chef!</h1>
+                        <p id="current-date">Sabtu, 18 Juli 2026</p>
+                    </div>
                 </div>
                 <div class="header-actions">
                     <button id="lang-toggle-btn" class="btn lang-btn" title="Ganti Bahasa / Change Language">
@@ -314,6 +324,6 @@
     <!-- External Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <script src="app.js?v=2"></script>
+    <script src="app.js?v=3"></script>
 </body>
 </html>

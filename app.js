@@ -866,6 +866,22 @@ function autoGeneratePlan() {
     if (window.confetti) confetti({ particleCount: 150, spread: 100, origin: { y: 0.5 } });
 }
 
+function initMobileMenu() {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeSidebarBtn = document.getElementById('close-sidebar-btn');
+    const sidebar = document.getElementById('sidebar');
+    const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+    function toggleSidebar() {
+        sidebar.classList.toggle('active');
+        sidebarOverlay.classList.toggle('active');
+    }
+
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', toggleSidebar);
+    if (closeSidebarBtn) closeSidebarBtn.addEventListener('click', toggleSidebar);
+    if (sidebarOverlay) sidebarOverlay.addEventListener('click', toggleSidebar);
+}
+
 function init() {
     applyTranslation();
     syncGoalInputs();
@@ -873,6 +889,7 @@ function init() {
     initEventListeners();
     initModals();
     initWaterTracker();
+    initMobileMenu();
     
     const magicBtn = document.getElementById('magic-plan-btn');
     if(magicBtn) magicBtn.addEventListener('click', autoGeneratePlan);
